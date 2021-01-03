@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1> INICANDO OS ESTUDOS EM DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong>Dom</strong em Javascrit> </p>
+    <div id="msg">Clique</div>
+    <script>
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)// a origem do site.
+        //var corpo = window.document.body// para mudar o body atraves do js
+        //corpo.style.background = 'black'
+
+        /*
+        var p1 = window.document.getElementsByTagName('p')[1]// recebe o q contem na tag p 0 para ser manipulado
+        window.document.write('Está escrito assim'+p1.innerText)//apresenta o resultado desejado do q tem na variável. 
+        p1.style.color='blue'//mudou o estilo da tag p[0]
+        */
+        //document.write(p1.innerHTML)// o innerHTML puxa as configurações alem do texto.
+        //window.alert(p1.innerHTML)//aqui ele mostraria as tags html no alert
+        //window.alert(p1.innerText)//aqui somente o texto.
+
+/* por id e or name não esquer de especificar o nome na tag ou o id.
+        var d = window.document.getElementById('msg')//aqui é a manipulação por id
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando....'
+*/
+
+        //query selector.
+        var d =  window.document.querySelector('div#msg')//toda div e representada por uma #
+        d.style.color = 'blue'
+    </script>
+</body>
+</html>

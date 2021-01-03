@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira aula</title>
+    <style>
+        body{
+            background-color: rgb(139, 139, 175);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: rgb(211, 92, 71);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = window.prompt('Digite um numero')//prompt retorna string
+        var n2 = window.prompt('Digite outro numero')//string
+        var s = n1 + n2
+        window.alert('A soma dos numeros é :'+ s)
+        //string + string (o + serve como concatenação)
+        //number + number (o + vai ser adição.)
+        window.alert('Neste caso ele'+ s)
+        var n3 = Number.parseInt(n1)
+        var n4 = Number.parseInt(n2)
+        s1 = n3 + n4
+        window.alert('A soma é :'+ s1)
+        //Alert com playholder
+        window.alert(`A soma entre ${n3} e ${n4} é ${s1}`)//tem q ser crase
+
+/*> nome == rodrigo
+Uncaught ReferenceError: nome is not defined
+> nome = rodrigo
+Uncaught ReferenceError: rodrigo is not defined
+> nome = 'Rodrigo'
+'Rodrigo'
+> idade = 44
+44
+> nota = 6.6
+6.6
+> `O aluno ${nome} de ${idade} tiro nota ${nota}` tem q ser crases
+'O aluno Rodrigo de 44 tiro nota 6.6'*/
+</script>
+</body>
+</html>
