@@ -1,0 +1,51 @@
+/* o asterisco e chaves serve para configurar todos os elementos do html*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*a # faz referencia aos ids que determinamos.*/
+#titulo{
+    font-family: sans-serif;
+    color: #388861;
+    margin-left: 7%;
+}
+#subtitulo{
+    font-family: sans-serif;
+    color: #388861;
+    margin-left: 10%;
+}
+fieldset{
+    border: 0;
+}
+body{
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #594295d;
+    margin-left: 26%;
+    margin-top: 2%;
+    justify-content: center;
+}
+/*bordar para todas as caixas de texto*/
+input,select,textarea,button{
+    border-radius: 5px;
+
+}
+/*para selecionar classe coloca o ponto*/
+.campo{
+    margin-bottom: 1em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+fieldset.grupo.campo{
+    float:left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    
+}
