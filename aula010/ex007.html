@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: 18pt Arial;
+        }
+        input {
+            font: 18pt;
+            width: 50px;
+        }
+        div#res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="text1" id="text1">+
+    <input type="number" name="text2" id="text2">
+    <input type="button" value="Somar" onclick="soma()">
+    <div id="res">Resultado</div>
+    <script>
+        function soma() {
+            var tn1 = window.document.getElementById('text1')
+            var tn2 = window.document.querySelector('input#text2')
+            var res = window.document.getElementById('res')
+            //Tem que converter pois input é string
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            //So funciona se for com crase string interpolada e play holders${}
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`//com o innerhtml da para colocar tags dentro 
+            
+
+        }
+    </script>
+</body>
+</html>
