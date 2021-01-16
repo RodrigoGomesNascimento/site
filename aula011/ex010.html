@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+    <script>
+        
+        function calcular(){
+            var vel = window.document.getElementById('txtvel')
+            var res = window.document.querySelector('div#res')
+            var calc = Number(vel.value)
+            res.innerHTML = `<p> Sua Velocidade é : <strong>${calc}</strong>/km/h`
+            if (calc > 60){
+                res.innerHTML += `<p>Você esta <strong>MULTADO</strong> por excesso de velociadade`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança</p>`
+        }
+    </script>
+    
+
+    </div>
+    <div id="form">
+        <h2>Digite seu país</h2>
+        <input type="text" name="txtnac" id="txtnac">
+        <input type="button" value="Confirmar" onclick="mostrar()">
+    </div>
+    <div id="most">
+
+    </div>
+    <script>
+        function mostrar(){
+            var txtnac = document.querySelector('input#txtnac')
+            var iden = (txtnac.value)
+            var demon = document.querySelector('div#most')
+            if (iden == 'Brasil'){
+                demon.innerHTML += `<p> Você brasileiro</p>`
+            } else{
+                demon.innerHTML += `<p> Você é estrangeiro</p>`
+            }
+            }
+    </script>
+</body>
+</html>
